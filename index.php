@@ -30,6 +30,7 @@ class UsersApi
         echo '<pre>';
         print_r($this->settings);
         die; 
+        
 
     }
 
