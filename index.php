@@ -38,7 +38,9 @@ class UsersApi
 
         $this->content = $this->getContent();
 
-        $this->result = $this->applyFilters();
+        $this->applyFilters();
+
+        $this->result= $this->content;
 
         echo json_encode($this->result, JSON_PRETTY_PRINT);
     }
@@ -65,12 +67,6 @@ class UsersApi
 
         $this->applyCustomFilters();
         $this->applyGeneralFilters();
-
-
-                echo '<pre>';
-                print_r($this->content['data']);
-                die; 
- 
     }
 
     private function applyCustomFilters() {
