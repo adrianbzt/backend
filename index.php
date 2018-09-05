@@ -27,9 +27,9 @@ class UsersApi
         $filters = new Filters($_GET);
         $this->settings['filters'] = $filters->getFilters();
 
-        // echo '<pre>';
-        // print_r($this->settings);
-        // die; 
+        echo '<pre>';
+        print_r($this->settings);
+        die; 
 
     }
 
