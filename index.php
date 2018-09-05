@@ -23,20 +23,10 @@ class UsersApi
             "ver" => isset($_GET['ver']) ? $_GET['ver'] : 1,
         );
 
-        echo '<pre>';
-        print_r($_GET);
-        print_r($_POST);
-        die; 
 
         // filters that can be applied to the result
         $filters = new Filters($_GET);
         $this->settings['filters'] = $filters->getFilters();
-
-        echo '<pre>';
-        print_r($this->settings);
-        die; 
-
-
     }
 
     public function run()
