@@ -1,0 +1,45 @@
+Programming expectations and conditions
+
+As a general rule, we want to assess your skills in realistic conditions as you would have on the job. Therefore:
+
+You have internet use it! Consult PHP references, troubleshooting resources, etc.
+
+While the scope of the exercise is small you need to consider this functionality is part of a bigger codebase with a lot of developers expected to understand and augment your code as easily as possible:
+
+Readability: Think about how easy it will be for other developers to take over your code. 
+
+Flexibility/Generalisation: Functional requirements tend to change, data sources might be today a CSV file, tomorrow it might be a json or a mysql database, maybe another REST web service. As a general rule it is important to tackle broader flexibility than the strict requirement
+
+Robustness, things do not always go as expected, right ?
+
+Reutilisation: A framework, A library a code snippet . Yes you can reuse them as long as the re-used component is clearly highlighted to help us distinguishing your own code and re-used components. It is really up to you, maybe do it the way you  would choose if this was a personal project. 
+
+On the outcome/ completeness of the code you will provide. As a general rule we prefer to see a solid foundation start rather than a rushed working solution which do not meet above conditions.
+
+As a general rule we prefer to see a solid foundation start rather than a rushed working solution which do not meet above conditions. 
+The Exercise
+
+The goal of the exercise is to create a list of test takers (test takers can be seen as users). 
+
+
+1. _Backend (PHP)_. 
+
+Create a REST web service that returns a list of _test takers_. This webservice should rely on a direct source of data. 
+ As per the generalisation/flexibility, you should take into account in your code that the format and 
+ the source of the data may change in the future and it should be easy for another developer to switch to a new data source.
+ To start with, you are provided with `testtaker.json` and `testtaker.csv`. 
+ Those two files are two alternative formats containing the same data and both formats should be supported 
+ as a data source for your REST web service.
+
+
+Here is the link to the client : https://hr.oat.taocloud.org/client/
+
+
+ 2. _Frontend (HTML/CSS/JS)_. Create a component that enables you to load the data from the service created during step 1 
+ and display the names of the test takers.
+
+
+Here is the link of the API : http://hr.oat.taocloud.org/api/ 
+
+
+> Nice to have: The component should be reused to display other kind of data.
